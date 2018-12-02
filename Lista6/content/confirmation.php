@@ -55,6 +55,9 @@ $MAINPAGE = "menu.php";
 
 $P = new Page("Potwierdzenie wykonania przelewu");
 $P->addCss("form.css");
+$P->addJs("inject2.js");
+
+
 
 echo $P->Begin();
 echo $P->PageHeaderLogout();
@@ -63,7 +66,7 @@ echo $P->PageHeaderLogout();
     <?php
 
     echo $P->ConfirmationSite($transid,$name,$account,$value,$title,$date);
-
+//    echo "<script src=\"scripts/inject2.js\"></script>";
     echo $P->AddReturn();
 
     echo $P->End();

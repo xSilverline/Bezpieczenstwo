@@ -25,7 +25,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $new_password_err = "Please enter the new password.";
     } elseif(strlen(trim($_POST["new_password"])) < 6){
         $new_password_err = "Password must have atleast 6 characters.";
-    } else{
+    }
+    elseif(preg_match('/[a-zA-Z0-9]{5,}$/',trim($_POST["new_password"])) == false){
+        $new_password_err = "Password must have atleast 6 characters - only Letters and numbers.";
+    }else{
         $new_password = trim($_POST["new_password"]);
     }
 
@@ -42,14 +45,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before updating the database
     if(empty($new_password_err) && empty($confirm_password_err)){
         // Prepare an update statement
-        $sql = "UPDATE users SET password = ? WHERE id = ?";
+        $sql = "UPDATE users SET Pass = ? WHERE id = ?";
 
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
 
             // Set parameters
-            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+            $param_password = password_hash($new_password, PASSWORD_ARGON2I);
             $param_id = $_SESSION["id"];
 
             // Attempt to execute the prepared statement
@@ -62,6 +65,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 echo "Oops! Something went wrong. Please try again later.";
             }
         }
+        else
+        {
+            echo "nah";
+        }
 
         // Close statement
         mysqli_stmt_close($stmt);
@@ -69,6 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Close connection
     mysqli_close($link);
+
 }
 
     $MAINPAGE = "menu.php";

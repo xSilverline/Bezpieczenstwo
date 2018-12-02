@@ -24,13 +24,14 @@ $MAINPAGE = "menu.php";
 
 $P = new Page("Potwierdzenie wykonania przelewu");
 $P->addCss("Form.css");
+$P->addJs("inject3.js");
 
 echo $P->Begin();
 echo $P->PageHeaderLogout();
 
 
     echo $P->CreateHistory();
-//    ------------------------
+
 
 
 $sql = "SELECT accountnr, recivername, amount, title, transdate, transid FROM transactions WHERE UserID = ?";
@@ -64,10 +65,10 @@ if($stmt = mysqli_prepare($link, $sql)){
         echo "Oops! Something went wrong. Please try again later.";
     }
 }
+echo $P->CloseSection();
+//echo "<script src=\"scripts/inject3.js\"></script>";
 
 
-
-    echo $P->CloseSection();
     echo $P->AddReturn();
 
     echo $P->End();

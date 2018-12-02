@@ -145,17 +145,15 @@ $LOGIN_FORM = <<< EOT
   <div id="sendButton">
   <button type="submit">Zaloguj</button>
   </div>
+  <a href="reset.php" id="resetlink">Zresetuj Hasło</a>
 </form>
-<!--<div id = "resetpass">-->
-<!--&lt;!&ndash;<form action="reset.php">&ndash;&gt;-->
-    <!--&lt;!&ndash;<input type="submit" value="Zresetuj Hasło" />&ndash;&gt;-->
-<!--&lt;!&ndash;</form>&ndash;&gt;-->
-<!--</div>-->
+
+
 
 EOT;
 
 $RESET_FORM = <<< EOT
-<form action="reset.php"  method="post" >
+
 <h3>Resetowanie Hasła</h3>
  
   <div>
@@ -181,23 +179,23 @@ $TRANSACTION_FORM = <<< EOT
   <div>
     <label for="account">Nr konta: </label>
     <span class="error">* {{ACCERR}}</span>
-    <input type="text" id="name" name="account" maxlength="32" >
+    <input type="text" id="account" name="account" maxlength="32" >
     
   </div>
   <div>
     <label for="val">Kwota: </label>
     <span class="error">* {{VALERR}}</span>
-    <input type="text" id="name" name="value" maxlength="20" >
+    <input type="text" id="value" name="value" maxlength="20" >
     
   </div> 
   <div>
     <label for="title">Tytuł: </label>
     <span class="error">* {{TITERR}}</span>
-    <input type="text" id="name" name="title" maxlength="20" >
+    <input type="text" id="title" name="title" maxlength="20" >
      
 </div>
   <div id="sendButton">
-  <button type="submit">Wyślij</button>
+  <button type="submit" onclick="store()">Wyślij</button>
   </div>
 </form>
 
@@ -205,33 +203,50 @@ EOT;
 
 $VALIDATION_SITE = <<< EOT
 <div>
-<p class="descrip">Nazwa odbiorcy:</p>
-<p class="pdata">{{NAME}}</p>
+<p class="descrip" >Nazwa odbiorcy:</p>
+<p class="pdata" id="name"></p>
+<input type="hidden" id="name1" name="name" maxlength="20" >
 <br>
 </div>
 <div>
-<p class="descrip">Nr. Konta:</p>
-<p class="pdata">{{ACCOUNT}}</p>
+<p class="descrip" >Nr. Konta:</p>
+<p class="pdata" id="account"></p>
+<input type="hidden" id="account1" name="account" maxlength="32" >
 <br>
 </div>
 <div>
-<p class="descrip">Kwota:</p>
-<p class="pdata">{{VALUE}}</p>
+<p class="descrip" >Kwota:</p>
+<p class="pdata" id="value"></p>
+<input type="hidden" id="value1" name="value" maxlength="20" >
 <br>
 </div>
 <div>
-<p class="descrip">Tytuł:</p>
-<p class="pdata">{{TITLE}}</p>
+<p class="descrip" >Tytuł:</p>
+<p class="pdata" id="title"></p>
+<input type="hidden" id="title1" name="title" maxlength="20" >
 <br>
 </div>
 <div>
-<p class="descrip">Data: </p>
-<p class="pdata">{{DATE}}</p>
+<p class="descrip" >Data: </p>
+<p class="pdata" id="date">{{DATE}}</p>
 </div>
 <div id="sendButton">
   <button type="submit">Dalej</button>
   </div>
 </form>
+
+<script >
+    document.getElementById("name").innerHTML = sessionStorage.getItem("name");
+    document.getElementById("account").innerHTML = sessionStorage.getItem("acc");
+    document.getElementById("value").innerHTML = sessionStorage.getItem("val");
+    document.getElementById("title").innerHTML = sessionStorage.getItem("title");
+
+    
+    document.getElementById("name1").value = sessionStorage.getItem("name");
+    document.getElementById("account1").value = sessionStorage.getItem("acc");
+    document.getElementById("value1").value = sessionStorage.getItem("val");
+    document.getElementById("title1").value = sessionStorage.getItem("title");
+</script>
 EOT;
 
 $CONFIRMATION_SITE = <<< EOT
@@ -247,7 +262,7 @@ $CONFIRMATION_SITE = <<< EOT
 </div>
 <div>
 <p class="descrip">Nr. Konta:</p>
-<p class="pdata">{{ACCOUNT}}</p>
+<p class="pdata" id="accountconfirm">{{ACCOUNT}}</p>
 <br>
 </div>
 <div>
@@ -272,8 +287,8 @@ EOT;
 
 $HISTORY_SITE = <<< EOT
 <section>
-    <table style="width: :90%">
-        <tr id ="titles">
+    <table style="width: :90%" id="table">
+        <tr class ="titles" id="titles">
             <th>ID transakcji</th>
             <th>Nazwa odbiorcy</th>
             <th>Numer Konta</th>
@@ -364,7 +379,7 @@ class Page
 
         $X = [];
         $C = $this->jsfiles;
-        $T = '<script src="{{JS}}"></script>' . "\n";
+        $T = '<script src="scripts/{{JS}}"></script>' . "\n";
         for ($i = 0; $i < count($this->jsfiles); $i++){
             $X[]= str_replace(["{{ROOT}}", "{{JS}}"], [$this->root, (string) $C[$i]], $T);
         }
@@ -397,11 +412,11 @@ class Page
         return $s;
     }
 
-    public function ValidationSite($name,$account,$value,$title,$date)
+    public function ValidationSite($date)
     {
         global $VALIDATION_SITE;
         $s = $VALIDATION_SITE;
-        $s = str_replace(["{{NAME}}","{{ACCOUNT}}","{{VALUE}}","{{TITLE}}","{{DATE}}"],[$name,$account,$value,$title,$date],$s);
+        $s = str_replace("{{DATE}}",$date,$s);
         return $s;
     }
 

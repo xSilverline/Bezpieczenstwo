@@ -9,16 +9,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
     header("location: login.php");
     exit;
 }
-$name = $_SESSION['name'];
-$account = $_SESSION['acc'];
-$value = $_SESSION['val'];
-$title = $_SESSION['title'];
+
+
 $date = $_SESSION['date'];
 $id = $_SESSION['id'];
 $transid ="";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
+    $name = $_POST['name'];
+    $account = $_POST['account'];
+    $value = $_POST['value'];
+    $title = $_POST['title'];
+
+    $date = $_SESSION['date'];
+    $id = $_SESSION['id'];
+    $transid ="";
 
     if(!empty($id) && !empty($account) && !empty($value) && !empty($title) && !empty($date) && !empty($name))
     {
@@ -40,23 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
-                // Redirect to login page
-//                $sql2 = "SELECT ID FROM transactions WHERE transid = ?";
-//                if($stmt2 = mysqli_prepare($link, $sql2)) {
-//                    // Bind variables to the prepared statement as parameters
-//                    mysqli_stmt_bind_param($stmt2, "s", $param_id,$param_value,$param_name, $param_date, $param_account, $param_title);
-//
-//
-//                    // Attempt to execute the prepared statement
-//                    if (mysqli_stmt_execute($stmt2)) {
-//                        // Store result
-//                        mysqli_stmt_store_result($stmt2);
-//
-//                        // Check if username exists, if yes then verify password
-//                        if (mysqli_stmt_num_rows($stmt2) == 1)
-//                        {
-//                            mysqli_stmt_bind_result($stmt2,$transid);
-//                            echo $transid;
 
                             $_SESSION['transid'] = $param_transid;
                             $_SESSION['name'] = "";
@@ -65,13 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                             $_SESSION['title'] = "";
                             $_SESSION['date'] = "";
                             header("Location: confirmation.php");
-//                        }
-//                        else
-//                        {
-//                            echo "Wystąpił Błąd";
-//                        }
-//                    }
-//                }
 
             }
             else
@@ -98,17 +80,25 @@ $MAINPAGE = "form.php";
 
 $P = new Page("Potwierdzenie przelewu");
 $P->addCss("form.css");
-
-
+//$P->addJs("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
+$P->addJs("inject1.js");
+//
 
 echo $P->Begin();
 echo $P->PageHeaderLogout();
 ?>
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  method="post" >
+
+<form id="transForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  method="post"  >
 
 <?php
 
-echo $P->ValidationSite($name,$account,$value,$title,$date);
+
+
+echo $P->ValidationSite($date);
+?>
+
+<?php
+//echo "<script src=\"scripts/inject1.js\"></script>";
 
 echo $P->AddReturn();
 

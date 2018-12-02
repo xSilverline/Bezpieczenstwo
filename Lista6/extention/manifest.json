@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Bank Extension",
+  "version": "1.0",
+  "description": "Rozszerzenie Bankowe",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/L3/content/*"],
+      "js": [
+        "inject1.js",
+		"inject2.js",
+		"inject3.js"
+      ]
+	  
+    }
+  ]
+  
+}

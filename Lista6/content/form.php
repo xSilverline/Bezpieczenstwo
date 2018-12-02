@@ -14,16 +14,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 $name = $account = $value = $title= "";
 $name_err = $account_err = $value_err = $title_err = "";
 
-// Check connection
-//if ($conn->connect_error) {
-//    die("Connection failed: " . $conn->connect_error);
-//}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
     if(empty(test_input($_POST["name"])))
     {
         $name_err = "Please enter a username.";
+    }
+    else if (preg_match('/[a-zA-Z0-9]{5,}$/',trim($_POST["name"])) == false){
+        $username_err = "Username must have atleast 6 characters - only Letters and numbers.";
     }
     else
     {
@@ -56,6 +55,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $title_err = "Proszę podać tytuł przelewu";
     }
+    else if (preg_match('/[a-zA-Z0-9]{5,}$/',trim($_POST["title"])) == false)
+    {
+        $title_err = "Title must have atleast 6 characters - only Letters and numbers.";
+    }
     else
     {
         $title = test_input($_POST["title"]);
@@ -64,21 +67,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     if(empty($name_err) && empty($account_err) && empty($value_err) && empty($title_err))
     {
         $date=date('Y-m-d H:i:s');
-        $_SESSION['name'] = $name;
-        $_SESSION['acc'] = $account;
-        $_SESSION['val'] = $value;
-        $_SESSION['title'] = $title;
+
         $_SESSION['date'] = $date;
-//        unset($_POST["name"]);
-//        unset($_POST["account"]);
-//        unset($_POST["value"]);
-//        unset($_POST["title"]);
+
         header('Location: TransacionValidation.php');
     }
     mysqli_close($link);
 
 
 }
+
+
 
 
 function test_input($data)
@@ -94,13 +93,14 @@ $MAINPAGE = "menu.php";
 
 $P = new Page("Przelew");
 $P->addCss("Form.css");
+$P->addJs("setStorage.js");
 
 
 
 echo $P->Begin();
 echo $P->PageHeaderLogout();
 ?>
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  method="post" >
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" >
 
 <?php
 echo $P->TransactionForm($name_err,$account_err,$value_err,$title_err);

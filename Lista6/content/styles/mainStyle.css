@@ -142,6 +142,16 @@ a
 
 }
 
+#resetlink
+{
+    background: none;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+
+}
+
+
 footer
 {
     color: whitesmoke;
