@@ -1,0 +1,48 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-761/762
+Content-Length: 762
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /content</title>
+ </head>
+ <body>
+<h1>Index of /content</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="HomePage.php">HomePage.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">380 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="Login.php">Login.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="Opinion.php">Opinion.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="Page.php">Page.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right"> 15K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="Register.php">Register.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">5.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="TransacionValidation.php">TransacionValidation.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">2.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="accept.php">accept.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">410 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="accepted.php">accepted.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="admin.php">admin.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">598 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="changepass.php">changepass.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">3.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="config.php">config.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">277 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="config2.php">config2.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">279 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="confirmation.php">confirmation.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">2.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="form.php">form.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="history.php">history.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">2.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="logout.php">logout.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">232 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="manage.php">manage.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">5.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="menu.php">menu.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">592 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reset.php">reset.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right">3.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="scripts/">scripts/</a></td><td align="right">2019-01-25 14:33  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="start.php">start.php</a></td><td align="right">2019-01-25 14:33  </td><td align="right"> 98 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="styles/">styles/</a></td><td align="right">2019-01-25 14:33  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+</body></html>

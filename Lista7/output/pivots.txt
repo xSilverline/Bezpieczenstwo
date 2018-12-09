@@ -1,0 +1,91 @@
+GET http://localhost/ name=http://localhost/ type=serv linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=10918 notes=3 sig=0xb94e98a
+GET http://localhost/content/ name=content type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=5196 notes=1 sig=0xf4c9837b
+GET http://localhost/content/%20styles/ name=\x20styles type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=289 notes=0 sig=0x1138ba4b
+GET http://localhost/content/%20styles/HomePage.css name=HomePage.css type=unknown linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=301 notes=0 sig=0xffdfffff
+GET http://localhost/content/%20styles/Login.css name=Login.css type=unknown linked=yes browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=298 notes=0 sig=0xffdfffff
+GET http://localhost/content/%20styles/mainStyle.css name=mainStyle.css type=unknown linked=yes browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=302 notes=0 sig=0xffdfffff
+GET http://localhost/content/%20styles/Opinion.css name=Opinion.css type=unknown linked=yes browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=300 notes=0 sig=0xffdfffff
+GET http://localhost/content/%20styles/Register.css name=Register.css type=unknown linked=yes browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=301 notes=0 sig=0xffdfffff
+GET http://localhost/content/%20styles/reset.css name=reset.css type=unknown linked=yes browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=298 notes=0 sig=0xffdfffff
+GET http://localhost/content/%20styles/ResetForm.css name=ResetForm.css type=unknown linked=yes browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=302 notes=0 sig=0xffdfffff
+GET http://localhost/content/scripts/ name=scripts type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2186 notes=1 sig=0x562bb175
+GET http://localhost/content/scripts/https:/ name=https: type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=296 notes=0 sig=0xc6348c60
+GET http://localhost/content/scripts/https:/cdnjs.cloudflare.com/ name=cdnjs.cloudflare.com type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=317 notes=0 sig=0x5ad3b5af
+GET http://localhost/content/scripts/https:/cdnjs.cloudflare.com/ajax/ name=ajax type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=322 notes=0 sig=0xd6b0ad6a
+GET http://localhost/content/scripts/https:/cdnjs.cloudflare.com/ajax/libs/ name=libs type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=327 notes=0 sig=0xfe057fff
+GET http://localhost/content/scripts/https:/cdnjs.cloudflare.com/ajax/libs/mathjax/ name=mathjax type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=335 notes=0 sig=0xdf0d3de8
+GET http://localhost/content/scripts/https:/cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/ name=2.7.4 type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=341 notes=0 sig=0x5291a523
+GET http://localhost/content/scripts/https:/cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js name=MathJax.js type=file linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=351 notes=0 sig=0x6b53d6f4
+GET http://localhost/content/scripts/https:/cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML name=config type=param linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=351 notes=0 sig=0xffbfffff
+GET http://localhost/content/scripts/inject1.js name=inject1.js type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1421 notes=2 sig=0xfff5810e
+GET http://localhost/content/scripts/inject1.zip name=inject1.zip type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=681 notes=1 sig=0xfff6d56b
+GET http://localhost/content/scripts/inject2.js name=inject2.js type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=291 notes=2 sig=0xfff5810e
+GET http://localhost/content/scripts/inject3.js name=inject3.js type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=969 notes=2 sig=0xfff5810e
+GET http://localhost/content/scripts/jquery.js name=jquery.js type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=86358 notes=3 sig=0x43e46831
+GET http://localhost/content/scripts/manifest.json name=manifest.json type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=354 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/scripts/setStorage.js name=setStorage.js type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=338 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/scripts/?C=N;O=D name=C type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2186 notes=1 sig=0x28f4fa31
+GET http://localhost/content/scripts/?C=N;O=D name=O type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2186 notes=1 sig=0x28f4fa31
+GET http://localhost/content/styles/ name=styles type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2562 notes=1 sig=0x3e3587e4
+GET http://localhost/content/styles/backimg.jpg name=backimg.jpg type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=268374 notes=0 sig=0xfff7ffff
+GET http://localhost/content/styles/Form.css name=Form.css type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2933 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/HomePage.css name=HomePage.css type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2121 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/Login.css name=Login.css type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2138 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/mainStyle.css name=mainStyle.css type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=3012 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/Opinion.css name=Opinion.css type=file linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=2221 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/Register.css name=Register.css type=file linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=2066 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/reset.css name=reset.css type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1435 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/ResetForm.css name=ResetForm.css type=file linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=2066 notes=1 sig=0xfff6d5cd
+GET http://localhost/content/styles/?C=N;O=D name=C type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2562 notes=1 sig=0x28f4fa31
+GET http://localhost/content/styles/?C=N;O=D name=O type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2562 notes=1 sig=0x28f4fa31
+GET http://localhost/content/accept.php name=accept.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=4 notes=0 sig=0xffefffff
+GET http://localhost/content/accepted.php name=accepted.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=302 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/admin.php name=admin.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=302 len=2 notes=1 sig=0x6b4bfc85
+GET http://localhost/content/changepass.php name=changepass.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=302 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/config.php name=config.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/config2.php name=config2.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=0 notes=1 sig=0xffeed56b
+GET http://localhost/content/confirmation.php name=confirmation.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=302 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/form.php name=form.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=302 len=2 notes=1 sig=0x6b4bfc85
+GET http://localhost/content/history.php name=history.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=302 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/HomePage.php name=HomePage.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=781 notes=0 sig=0xffefffff
+GET http://localhost/content/Login.php name=Login.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1192 notes=1 sig=0xffeed697
+GET http://localhost/content/logout.php name=logout.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=302 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/manage.php name=manage.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=302 len=0 notes=1 sig=0x9d099e16
+GET http://localhost/content/menu.php name=menu.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=302 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/Opinion.php name=Opinion.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1515 notes=1 sig=0x213f74a
+POST http://localhost/content/Opinion.php DATA:message=skipfish&captcha=1 name=captcha type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1730 notes=0 sig=0xffbfffff
+POST http://localhost/content/Opinion.php DATA:message=skipfish&captcha=1 name=message type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1730 notes=0 sig=0xffbfffff
+GET http://localhost/content/Page.php name=Page.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/Register.php name=Register.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1494 notes=1 sig=0xffeed697
+GET http://localhost/content/reset.php name=reset.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=978 notes=1 sig=0xffeed697
+GET http://localhost/content/start.php name=start.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/TransacionValidation.php name=TransacionValidation.php type=pathinfo linked=yes browsers=0 browser_used=FAST dup=1 code=302 len=0 notes=0 sig=0xffefffff
+GET http://localhost/content/?C=N;O=D name=C type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=5196 notes=1 sig=0x28f4fa31
+GET http://localhost/content/?C=N;O=D name=O type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=5196 notes=1 sig=0x28f4fa31
+GET http://localhost/icons/ name=icons type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=403 len=290 notes=0 sig=0x7678f5c5
+GET http://localhost/icons/a.gif name=a.gif type=file linked=no browsers=0 browser_used=FAST dup=0 code=200 len=246 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/a.png name=a.png type=file linked=no browsers=0 browser_used=FAST dup=0 code=200 len=189 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/back.gif name=back.gif type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=216 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/back.png name=back.png type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=186 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/blank.gif name=blank.gif type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=148 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/blank.png name=blank.png type=file linked=no browsers=0 browser_used=FAST dup=0 code=200 len=105 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/compressed.gif name=compressed.gif type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1038 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/compressed.png name=compressed.png type=file linked=no browsers=0 browser_used=FAST dup=0 code=200 len=991 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/dir.gif name=dir.gif type=file linked=no browsers=0 browser_used=FAST dup=0 code=200 len=225 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/dir.png name=dir.png type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=174 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/folder.gif name=folder.gif type=file linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=225 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/folder.png name=folder.png type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=174 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/image2.gif name=image2.gif type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=309 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/image2.png name=image2.png type=file linked=no browsers=0 browser_used=FAST dup=0 code=200 len=229 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/link.gif name=link.gif type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=249 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/link.png name=link.png type=file linked=no browsers=0 browser_used=FAST dup=0 code=200 len=188 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/p.gif name=p.gif type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=237 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/p.png name=p.png type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=176 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/script.gif name=script.gif type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=242 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/script.png name=script.png type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=169 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/text.gif name=text.gif type=file linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=229 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/text.png name=text.png type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=170 notes=1 sig=0xfff7ffff
+GET http://localhost/icons/ubuntu-logo.png name=ubuntu-logo.png type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=3338 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/unknown.gif name=unknown.gif type=file linked=yes browsers=0 browser_used=FAST dup=1 code=200 len=245 notes=0 sig=0xfff7ffff
+GET http://localhost/icons/unknown.png name=unknown.png type=file linked=no browsers=0 browser_used=FAST dup=1 code=200 len=185 notes=1 sig=0xfff7ffff
+GET http://localhost/manual name=manual type=unknown linked=yes browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=279 notes=0 sig=0xffdfffff

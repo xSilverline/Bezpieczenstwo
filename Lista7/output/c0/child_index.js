@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 4, 'name': 'content', 'dir': 'c0', 'linked': 5, 'url': 'http://localhost/content/', 'fetched': true, 'code': 200, 'len': 5196, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'UTF-8', 'missing': false, 'csens': true, 'child_cnt': 44, 'issue_cnt': [ 31, 0, 1, 1, 0 ], 'sig': 0xf4c9837b },
+  { 'dupe': false, 'type': 4, 'name': 'icons', 'dir': 'c1', 'linked': 2, 'url': 'http://localhost/icons/', 'fetched': true, 'code': 403, 'len': 290, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'iso-8859-1', 'missing': false, 'csens': true, 'child_cnt': 12, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0x7678f5c5 },
+  { 'dupe': true, 'type': 32, 'name': 'manual', 'dir': 'c2', 'linked': 2, 'url': 'http://localhost/manual', 'fetched': true, 'code': 404, 'len': 279, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'iso-8859-1', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffdfffff }
+];

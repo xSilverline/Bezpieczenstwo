@@ -1,0 +1,33 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-615/616
+Content-Length: 616
+Keep-Alive: timeout=5, max=68
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Rejestracja</title> 
+  <meta name="author" content="Marcin Musielski">
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href=" styles/reset.css">
+
+<link rel="stylesheet" href=" styles/mainStyle.css">
+
+<link rel="stylesheet" href=" styles/Register.css">
+
+
+</head>
+<body>
+<div class="mainContainer"><header id="main-header">
+<h1>Bank</h1>
+
+
+</header><form action="/content/Register.php/"  method="post" 

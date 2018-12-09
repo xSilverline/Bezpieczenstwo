@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 302 Found\x0aDate: Sun, 09 Dec 2018 17:16:08 GMT\x0aServer: Apache/2.4.29 (Ubuntu)\x0aSet-Cookie: PHPSESSID=85q2oso5tivla1hkmgc7bh5oal; path=/\x0a\x0a[...truncated...]\x0a'}

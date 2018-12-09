@@ -1,0 +1,26 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Sun, 09 Dec 2018 17:16:08 GMT
+ETag: W/"123-58048602082f8-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-180/181
+Content-Length: 181
+Keep-Alive: timeout=5, max=87
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+document.onreadystatechange=function ()
+{
+    if(document.readyState === 'interactive') {
+        if (document.getElementById("accountconfirm").innerHTML != "") {
+            document.getElementById("accountconfirm").innerHTML = localStorage.getItem('acc');
+        }
+    }
+
+
+};
+
+dy></html>

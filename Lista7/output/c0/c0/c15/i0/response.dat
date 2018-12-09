@@ -1,0 +1,6 @@
+HTTP/1.1 302 Found
+Date: Sun, 09 Dec 2018 17:16:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Set-Cookie: PHPSESSID=85q2oso5tivla1hkmgc7bh5oal; path=/
+
+[...truncated...]

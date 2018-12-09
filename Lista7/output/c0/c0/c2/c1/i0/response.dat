@@ -1,0 +1,205 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Sun, 09 Dec 2018 17:16:08 GMT
+ETag: W/"b75-5804860209298-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-796/797
+Content-Length: 797
+Keep-Alive: timeout=5, max=42
+Connection: Keep-Alive
+Content-Type: text/css
+
+@media screen and (min-width: 320px)
+{
+
+    form
+    {
+        width: 320px;
+    }
+}
+@media screen and (min-width: 360px)
+{
+
+    form
+    {
+        width: 320px;
+    }
+}
+@media screen and (min-width: 720px)
+{
+
+    form
+    {
+        width: 400px;
+    }
+
+}
+@media screen and (min-width: 1024px)
+{
+
+    form
+    {
+        width: 400px;
+    }
+
+}
+
+
+form
+{
+    margin: 40px auto;
+    /*width: 400px;*/
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #ccc));
+}
+form a
+{
+    min-height: 20px;
+    width: 20%;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 2px auto;
+    border-radius: 5px;
+
+}
+
+form h3
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+form div + div
+{
+    margin-top: 1em;
+}
+
+label
+{
+
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+.error
+{
+    color: red;
+}
+input, textarea
+{
+
+    font: 1em sans-serif;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 30px;
+
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus
+{
+    border-color: #000;
+}
+
+textarea
+{
+    vertical-align: top;
+    height: 16em;
+    resize: none;
+}
+#sendButton
+{
+    width: 100%;
+
+}
+
+#sendButton button
+{
+    /*padding-left: 90px;*/
+    margin: 0 40%;
+    width: 20%;
+    height: 50px;
+    border-radius: 5px ;
+}
+
+#titleOp
+{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-bottom: 1px solid #5d5d5d;
+    margin-bottom: 20px;
+    padding: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #ccc));
+    box-shadow: 0 5px 5px #787c81;
+}
+.nick
+{
+
+    margin-top: 10px ;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 16px;
+    font-weight: bold;
+    background: #b1b1b1;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 0;
+
+}
+.nick span
+{
+    text-align: right;
+    font-size: 12px;
+    margin: auto;
+    width: 60%;
+    float: right;
+}
+
+header a
+{
+    min-height: 20px;
+    min-width: 10%;
+    width: 20%;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 2px 2% 2px 78%;
+
+}
+
+section
+{
+    width:94%;
+    text-align: center;
+    margin: 40px auto;
+    /*width: 400px;*/
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #ccc));
+}
+table, th, td
+{
+    font-size: 14px;
+    line-height: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+th, td {
+    padding: 5px;
+}
+table th {
+    color: white;
+    background-color: #0da809;
+    font-size: 14px;
+    /*font-weight: bold;*/
+}

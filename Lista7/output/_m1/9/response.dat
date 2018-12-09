@@ -1,0 +1,52 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-535/536
+Content-Length: 536
+Keep-Alive: timeout=5, max=17
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Reset</title> 
+  <meta name="author" content="Marcin Musielski">
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href=" styles/reset.css">
+
+<link rel="stylesheet" href=" styles/mainStyle.css">
+
+<link rel="stylesheet" href=" styles/ResetForm.css">
+
+
+</head>
+<body>
+<div class="mainContainer"><header id="main-header">
+<h1>Bank</h1>
+
+
+</header><form action="/content/reset.php/"  method="post" >
+
+<h3>Resetowanie Hasła</h3>
+ 
+  <div>
+    <label for="email">E-mail: </label>
+    <span class="error">* </span>
+    <input type="text" id="name" name="email" maxlength="20" >
+  </div>
+  <div id="sendButton">
+  <button type="submit">Zresetuj Hasło</button>
+  </div>
+</form><a href="Login.php" class="returnButton">Powrót</a></div><!-- container -->
+<footer>
+<p>
+        Created by  @2018
+</p>
+</footer>
+</body>
+</html>   

@@ -1,0 +1,36 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:09 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-576/577
+Content-Length: 577
+Keep-Alive: timeout=5, max=74
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Login</title> 
+  <meta name="author" content="Marcin Musielski">
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href=" styles/reset.css">
+
+<link rel="stylesheet" href=" styles/mainStyle.css">
+
+<link rel="stylesheet" href=" styles/Login.css">
+
+
+</head>
+<body>
+<div class="mainContainer"><header id="main-header">
+<h1>Bank</h1>
+
+
+</header><form action="/content/Login.php/"  method="post" 

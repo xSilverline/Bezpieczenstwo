@@ -1,0 +1,40 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Sun, 09 Dec 2018 17:16:08 GMT
+ETag: W/"3c9-58048602082f8-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-391/392
+Content-Length: 392
+Keep-Alive: timeout=5, max=60
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+document.onreadystatechange = function ()
+{
+    if(document.readyState === 'interactive') {
+        var table = document.getElementById("table");
+        var tr = table.getElementsByTagName("tr");
+        var found;
+        for (var i = 0; i < tr.length; i++) {
+            if (!tr[i].classList.contains('titles')) {
+                var td = tr[i].getElementsByTagName("td");
+                found = false;
+                var datearr = JSON.parse(localStorage.getItem('datearr'));
+                var accarr = JSON.parse(localStorage.getItem('accarr'));
+                if (td[2].innerHTML == "65432123456789012345678901") {
+                    for (var j = 0; j < datearr.length; j++) {
+                        if (td[5].innerHTML == datearr[j]) {
+                            td[2].innerHTML = accarr[j];
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+};
+

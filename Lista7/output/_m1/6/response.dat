@@ -1,0 +1,46 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 09 Dec 2018 17:16:09 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-403/404
+Content-Length: 404
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>HomePage</title> 
+  <meta name="author" content="Marcin Musielski">
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href=" styles/reset.css">
+
+<link rel="stylesheet" href=" styles/mainStyle.css">
+
+<link rel="stylesheet" href=" styles/HomePage.css">
+
+
+</head>
+<body>
+<div class="mainContainer"><header id="main-header">
+<h1>Bank</h1>
+
+
+</header> <div id=studyCont>
+        <ul class="study">
+            <li><a href="Register.php">Rejestracja</a></li>
+            <li><a href="Login.php">Login</a></li>
+        </ul>
+    </div>
+</div><!-- container -->
+<footer>
+<p>
+        Created by  @2018
+</p>
+</footer>
+</body>
+</html>   
+

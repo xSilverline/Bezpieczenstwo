@@ -1,0 +1,16 @@
+{
+  "name": "Bank Extension",
+  "version": "1.0",
+  "description": "Bank Extension!",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["http://127.0.0.1/*"],
+      "js": [
+        "jquery.js",
+        "inject1.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
